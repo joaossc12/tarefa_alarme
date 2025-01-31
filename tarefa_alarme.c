@@ -9,8 +9,9 @@
 #define BUTTON 5
 
 
-void init_pinos();
 volatile bool leds_ativos = false;  // Flag para evitar múltiplos acionamentos
+
+void init_pinos();
 int64_t alarm_callback(alarm_id_t id, void *user_data); // Função de callback do alarme
 void button_callback(uint gpio, uint32_t events);
 
